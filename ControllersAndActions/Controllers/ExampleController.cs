@@ -23,9 +23,16 @@ namespace ControllersAndActions.Controllers
             // return RedirectToAction("Index");
             // redirect to an action in different controller
 
-            TempData["Message"] = "Hello";
-            TempData["Date"] = DateTime.Now;
-            return RedirectToAction("Index");
+            
+            return RedirectToAction("Index","Basic");
+        }
+        public HttpStatusCodeResult StatusCode()
+        {
+            //return new HttpStatusCodeResult(404, "URL cannot be serviced");
+            //returning 404 result
+            //return HttpNotFound();
+            //sending a 401 result
+            return new HttpUnauthorizedResult();
         }
     }
 }

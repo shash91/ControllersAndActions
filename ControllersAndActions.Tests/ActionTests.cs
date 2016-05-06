@@ -33,5 +33,14 @@ namespace ControllersAndActions.Tests
             Assert.AreEqual("Index", result.RouteValues["action"]);
             Assert.AreEqual("MyID", result.RouteValues["ID"]);
         }
+        [TestMethod]
+        public void StatusCodeResultTest()
+        {
+            ExampleController target = new ExampleController();
+
+            HttpStatusCodeResult result = target.StatusCode();
+
+            Assert.AreEqual(401, result.StatusCode);
+        }
     }
 }
