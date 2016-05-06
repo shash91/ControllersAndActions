@@ -15,7 +15,7 @@ namespace ControllersAndActions.Tests
 
             ViewResult result = target.Index();
 
-            Assert.AreEqual("Hello,World", result.ViewData.Model);
+            Assert.AreEqual("Hello", result.ViewBag.Message);
 
 
 

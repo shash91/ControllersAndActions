@@ -13,7 +13,9 @@ namespace ControllersAndActions.Controllers
         {
             //  DateTime date = DateTime.Now;
             //return View(date);
-            return View((object)"Hello,World");
+            ViewBag.Message = "Hello";
+            ViewBag.Date = DateTime.Now;
+            return View();
         }
     }
 }

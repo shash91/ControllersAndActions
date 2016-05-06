@@ -41,6 +41,5 @@ C:\Projects\ControllersAndActions\ControllersAndActions\bin\System.Web.Webpages.
 C:\Projects\ControllersAndActions\ControllersAndActions\bin\System.Web.Webpages.Razor.xml
 C:\Projects\ControllersAndActions\ControllersAndActions\bin\System.Web.Helpers.xml
 C:\Projects\ControllersAndActions\ControllersAndActions\bin\System.Web.Mvc.xml
-C:\Projects\ControllersAndActions\ControllersAndActions\obj\Debug\ControllersAndActions.csprojResolveAssemblyReference.cache
 C:\Projects\ControllersAndActions\ControllersAndActions\obj\Debug\ControllersAndActions.dll
 C:\Projects\ControllersAndActions\ControllersAndActions\obj\Debug\ControllersAndActions.pdb
