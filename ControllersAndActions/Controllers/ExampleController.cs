@@ -17,9 +17,14 @@ namespace ControllersAndActions.Controllers
             ViewBag.Date = DateTime.Now;
             return View();
         }
-        public RedirectResult Redirect()
+        public RedirectToRouteResult Redirect()
         {
-            return RedirectPermanent("/Example/Index");
+            return RedirectToRoute(new
+            {
+                controller = "Example",
+                action = "Index",
+                ID = "MyID"
+            });
         }
     }
 }
