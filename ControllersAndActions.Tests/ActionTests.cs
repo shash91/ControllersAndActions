@@ -20,5 +20,14 @@ namespace ControllersAndActions.Tests
 
 
         }
+        [TestMethod]
+        public void RedirectTest()
+        {
+            ExampleController target = new ExampleController();
+            RedirectResult result = target.Redirect();
+
+            Assert.AreEqual("/Example/Index", result.Url);
+            Assert.IsTrue(result.Permanent);
+        }
     }
 }
