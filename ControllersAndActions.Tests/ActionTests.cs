@@ -15,7 +15,7 @@ namespace ControllersAndActions.Tests
 
             ViewResult result = target.Index();
 
-            Assert.AreEqual("Homepage", result.ViewName);
+            Assert.AreEqual("Hello,World", result.ViewData.Model);
 
 
 
