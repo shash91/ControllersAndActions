@@ -13,18 +13,19 @@ namespace ControllersAndActions.Controllers
         {
             //  DateTime date = DateTime.Now;
             //return View(date);
-            ViewBag.Message = "Hello";
-            ViewBag.Date = DateTime.Now;
+            ViewBag.Message = TempData["Message"];
+            ViewBag.Date = TempData["Date"];
             return View();
         }
         public RedirectToRouteResult Redirect()
         {
-            return RedirectToRoute(new
-            {
-                controller = "Example",
-                action = "Index",
-                ID = "MyID"
-            });
+            //redirect to an action in same controller
+            // return RedirectToAction("Index");
+            // redirect to an action in different controller
+
+            TempData["Message"] = "Hello";
+            TempData["Date"] = DateTime.Now;
+            return RedirectToAction("Index");
         }
     }
 }
